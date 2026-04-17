@@ -1,0 +1,7 @@
+{
+  "name": "D&D DM Emulator",
+  "description": "Upload a D&D character sheet PDF and play a solo campaign with an AI Dungeon Master.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

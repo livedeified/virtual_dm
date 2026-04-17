@@ -1,0 +1,27 @@
+# Build and Dependencies
+node_modules/
+dist/
+build/
+.vercel/
+.next/
+
+# OS Junk
+.DS_Store
+Thumbs.db
+
+# Large Binary Assets (D&D Rulebooks)
+DMs_Guide/
+Monster_Manual/
+Players_Handbook/
+*.pdf
+*.zip
+*.rar
+
+# IDE and Project Specs
+.vscode/
+*.code-workspace
+.agents/
+
+# Local Environment
+.env*
+!.env.example
