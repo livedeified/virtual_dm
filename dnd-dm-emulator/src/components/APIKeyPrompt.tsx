@@ -41,7 +41,7 @@ export function APIKeyPrompt({ onSetupComplete }: APIKeyPromptProps) {
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="w-full max-w-xl fantasy-border p-10 rounded-3xl bg-zinc-950/80 backdrop-blur-xl shadow-2xl relative"
+        className="w-full max-w-xl fantasy-border p-6 sm:p-10 rounded-3xl bg-zinc-950/80 backdrop-blur-xl shadow-2xl relative"
       >
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-leather.png')] opacity-10 pointer-events-none"></div>
         
