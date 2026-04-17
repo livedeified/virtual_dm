@@ -69,3 +69,34 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Base Styles */
+html, body {
+  @apply bg-zinc-950 text-zinc-100 selection:bg-amber-500/30 overflow-x-hidden w-full;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Mobile-First Typography & Touch */
+@media (max-width: 640px) {
+  .font-display {
+    @apply tracking-widest;
+  }
+  
+  /* Increase touch target areas */
+  button {
+    @apply min-h-[44px];
+  }
+
+  .prose {
+    @apply text-base leading-relaxed;
+  }
+}
+
+.parchment-texture {
+  background-image: url('https://www.transparenttextures.com/patterns/parchment.png');
+}
+
+.text-shadow-glow {
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+

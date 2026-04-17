@@ -623,35 +623,35 @@ const MessageItem = React.memo(({ message, profile, handleRoll, sendMessage, isT
                   onClick={() => handleRoll(sides, diceCount, getModifierValue(selectedModifier), selectedModifier !== 'none' ? selectedModifier : undefined)}
                   className="w-10 h-10 flex flex-col items-center justify-center rounded-xl bg-zinc-900 border border-amber-900/30 hover:border-amber-500/50 group transition-all"
                 >
-                  <span className="text-[10px] font-display font-bold text-amber-900/60 group-hover:text-amber-500/60">D</span>
-                  <span className="text-xs font-display font-bold text-zinc-500 group-hover:text-amber-500 leading-none">{sides}</span>
+                  <span className="text-[10px] font-display font-bold text-amber-600/60 group-hover:text-amber-500/60 leading-none">D</span>
+                  <span className="text-xs font-display font-bold text-amber-500/80 group-hover:text-amber-500 leading-none">{sides}</span>
                 </motion.button>
               ))}
             </div>
           </div>
 
-          <div className="flex gap-2 pb-2 hide-scrollbar overflow-x-auto">
+          <div className="flex flex-wrap gap-2 pb-2">
             <button
               onClick={() => sendMessage("I look around to see what I can perceive.")}
-              className="px-3 py-1.5 bg-zinc-900 border border-amber-900/30 text-amber-500/80 hover:text-amber-500 hover:border-amber-500/50 rounded-lg text-xs font-display tracking-widest uppercase transition-all whitespace-nowrap"
+              className="px-3 py-1.5 bg-zinc-900 border border-amber-900/30 text-amber-500/80 hover:text-amber-500 hover:border-amber-500/50 rounded-lg text-[10px] sm:text-xs font-display tracking-widest uppercase transition-all"
             >
               Look Around
             </button>
             <button
               onClick={() => sendMessage("I check my inventory and review my current condition.")}
-              className="px-3 py-1.5 bg-zinc-900 border border-amber-900/30 text-amber-500/80 hover:text-amber-500 hover:border-amber-500/50 rounded-lg text-xs font-display tracking-widest uppercase transition-all whitespace-nowrap"
+              className="px-3 py-1.5 bg-zinc-900 border border-amber-900/30 text-amber-500/80 hover:text-amber-500 hover:border-amber-500/50 rounded-lg text-[10px] sm:text-xs font-display tracking-widest uppercase transition-all"
             >
               Check Status
             </button>
             <button
               onClick={() => sendMessage("I suggest we take a short rest here.")}
-              className="px-3 py-1.5 bg-zinc-900 border border-amber-900/30 text-amber-500/80 hover:text-amber-500 hover:border-amber-500/50 rounded-lg text-xs font-display tracking-widest uppercase transition-all whitespace-nowrap"
+              className="px-3 py-1.5 bg-zinc-900 border border-amber-900/30 text-amber-500/80 hover:text-amber-500 hover:border-amber-500/50 rounded-lg text-[10px] sm:text-xs font-display tracking-widest uppercase transition-all"
             >
               Short Rest
             </button>
             <button
               onClick={() => sendMessage("I cautiously advance further into the area.")}
-              className="px-3 py-1.5 bg-zinc-900 border border-amber-900/30 text-amber-500/80 hover:text-amber-500 hover:border-amber-500/50 rounded-lg text-xs font-display tracking-widest uppercase transition-all whitespace-nowrap"
+              className="px-3 py-1.5 bg-zinc-900 border border-amber-900/30 text-amber-500/80 hover:text-amber-500 hover:border-amber-500/50 rounded-lg text-[10px] sm:text-xs font-display tracking-widest uppercase transition-all"
             >
               Advance
             </button>

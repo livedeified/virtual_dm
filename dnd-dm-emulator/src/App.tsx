@@ -331,49 +331,49 @@ export default function App() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_var(--tw-gradient-to)_100%)] from-transparent to-amber-900/30" />
       </div>
 
-      <header className="h-20 border-b border-amber-500/30 bg-zinc-950/60 backdrop-blur-md flex items-center justify-between px-8 shrink-0 z-20 shadow-2xl relative">
+      <header className="min-h-20 py-3 border-b border-amber-500/30 bg-zinc-950/60 backdrop-blur-md flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8 shrink-0 z-20 shadow-2xl relative gap-3">
         <div className="flex items-center gap-3">
-          <div className="p-2 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg shadow-[0_0_15px_rgba(245,158,11,0.6)]">
-            <Sparkles className="w-6 h-6 text-black" />
+          <div className="p-1.5 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg shadow-[0_0_15px_rgba(245,158,11,0.6)]">
+            <Sparkles className="w-5 h-5 text-black" />
           </div>
-          <h1 className="text-2xl font-display font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 drop-shadow-sm">
+          <h1 className="text-xl sm:text-2xl font-display font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 drop-shadow-sm">
             VOICE DUNGEON MASTER
           </h1>
         </div>
         
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-4">
           <div className="flex bg-zinc-900/80 rounded-xl p-1 border border-amber-500/30 shadow-inner backdrop-blur-sm">
             <button 
               onClick={() => setMode('text')} 
               title="Text Mode"
               className={`p-2 rounded-lg transition-all duration-300 ${mode === 'text' ? 'bg-amber-500 text-black shadow-[0_0_10px_rgba(245,158,11,0.5)]' : 'text-zinc-400 hover:text-amber-400'}`}
             >
-              <ScrollText className="w-5 h-5" />
+              <ScrollText className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
             <button 
               onClick={() => setMode('voice')} 
               title="Voice Mode"
               className={`p-2 rounded-lg transition-all duration-300 ${mode === 'voice' ? 'bg-amber-500 text-black shadow-[0_0_10px_rgba(245,158,11,0.5)]' : 'text-zinc-400 hover:text-amber-400'}`}
             >
-              <Music className="w-5 h-5" />
+              <Music className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
           {profile && (
             <button 
               onClick={resetCharacter}
               title="New Quest"
-              className="p-2.5 rounded-xl bg-zinc-900/80 border border-amber-500/30 text-amber-500 hover:bg-amber-500 hover:text-black transition-all duration-300 group shadow-lg backdrop-blur-sm"
+              className="p-2 sm:p-2.5 rounded-xl bg-zinc-900/80 border border-amber-500/30 text-amber-500 hover:bg-amber-500 hover:text-black transition-all duration-300 group shadow-lg backdrop-blur-sm"
             >
-              <RefreshCw className="w-5 h-5 group-hover:rotate-180 transition-transform duration-500" />
+              <RefreshCw className="w-4 h-4 sm:w-5 sm:h-5 group-hover:rotate-180 transition-transform duration-500" />
             </button>
           )}
           {isSetupComplete && (
             <button 
               onClick={clearSetup}
               title="API Settings"
-              className="p-2.5 rounded-xl bg-zinc-900/80 border border-amber-500/30 text-zinc-400 hover:bg-amber-500 hover:text-black transition-all duration-300 group shadow-lg backdrop-blur-sm"
+              className="p-2 sm:p-2.5 rounded-xl bg-zinc-900/80 border border-amber-500/30 text-zinc-400 hover:bg-amber-500 hover:text-black transition-all duration-300 group shadow-lg backdrop-blur-sm"
             >
-              <Settings className="w-5 h-5 group-hover:rotate-90 transition-transform duration-500" />
+              <Settings className="w-4 h-4 sm:w-5 sm:h-5 group-hover:rotate-90 transition-transform duration-500" />
             </button>
           )}
         </div>
