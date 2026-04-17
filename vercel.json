@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/dnd-dm-emulator/$1" }
+  ]
+}
